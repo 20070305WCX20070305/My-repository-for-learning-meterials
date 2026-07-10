@@ -1,0 +1,49 @@
+% !TEX program = xelatex
+
+\documentclass[11pt,a4paper]{ctexart}
+
+% ====== 字体 ======
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+
+% ====== 页面设置 ======
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\pagestyle{plain}
+
+% ====== 数学宏包（三个经典功能，但用 unicode-math 替代了 amssymb） ======
+\usepackage{mathtools}          % 必须放在 unicode-math 之前
+\usepackage{amsmath}            % 已被 mathtools 自动载入，保留显式声明无妨
+% \usepackage{amssymb}         % 删除！与 unicode-math 冲突，且 unicode-math 已提供所有符号
+
+% ====== 三线表 + 数字对齐 ======
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{enumitem}          % 增强列表控制
+
+% ====== 交叉引用与超链接 ======
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            citecolor=green,
+            urlcolor=cyan]{hyperref}
+\usepackage[noabbrev,nameinlink]{cleveref}  % 必须最后加载
+
+% ====== 自定义命令 ======
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\source}[1]{\par \hfill ——#1}
+
+\title{个人实践报告}
+\author{王晨暄}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{红色文化}
+
+\section
+
+\end{document}
